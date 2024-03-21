@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -9,6 +10,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.second{
+    border: 2px solid red;
+}
+
+.toolbar{
+    height: 400px;
+    width: 300px;
+    margin-left: -360px;
+    margin-right: 55px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.color-selector{
+    width: 300px;
+    height: 200px;
+}
+
+.delete-options{
+    height: 200px;
+    width: 300px;
+    display: flex; 
+}
+
+.eraser, .clear{
+    padding-top: 40px;
+    padding-left: 50px;
+    width: 150px;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+
+.eraser{
+    border-left: 0px;
+}
+
+.clear{
+    border-right: 0px;
+}
+
+.eraser-first, .clear-first{
+    margin-right: 45px;
+    text-align: center;
+}
+
+.eraser-btn, .clear-btn{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #pop-up{
@@ -26,7 +86,7 @@
 
 #container {
     margin-top: 50px;
-    border: 2px solid red;
+    border: 2px solid black;
     width: 800px;
     height: 800px;
     display:flex;
@@ -34,8 +94,6 @@
 }
 
 .item {
-    width: calc(100% / 16);
-    height: calc(100% / 16);
     box-sizing: border-box;
     border: 1px solid #000;
   }
