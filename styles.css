@@ -71,6 +71,24 @@
     border-radius: 5px;
 }
 
+.color-selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.color-first{
+    padding-bottom: 20px;
+}
+
+#current-color{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
 #pop-up{
     margin-top: 20px;
     margin-bottom: -20px;

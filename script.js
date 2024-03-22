@@ -5,6 +5,7 @@ let button = document.getElementById('pop-up');
 let clear = document.getElementById('clear');
 let eraser = document.getElementById('eraser');
 let paintingColor = 'black';
+let colorPicker = document.getElementById('current-color');
 
 function createGrid(dimension) {
     for (let i = 0; i < dimension; i++) {
@@ -25,7 +26,7 @@ function deletePreviousGrid() {
     }
 };
 
-function clearGrid(){
+function clearGrid() {
     container.querySelectorAll('.item').forEach(item => {
         item.style.backgroundColor = 'white';
     });
@@ -65,10 +66,14 @@ function paintGrid() {
 createGrid(16);
 button.addEventListener('click', setGridDimension);
 
-eraser.addEventListener('click', () =>{
+eraser.addEventListener('click', () => {
     paintingColor = 'white';
 });
 
-clear.addEventListener('click', ()=>{
+clear.addEventListener('click', () => {
     clearGrid();
+});
+
+colorPicker.addEventListener('input', () => {
+    paintingColor = colorPicker.value;
 });
